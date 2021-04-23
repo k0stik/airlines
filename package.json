@@ -1,0 +1,31 @@
+{
+  "name": "airlines",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "nodemon": "MODE=application nodemon --max_old_space_size=3072 app.mjs"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "chista": "^1.0.0",
+    "confme": "^1.1.0",
+    "express": "^4.17.1",
+    "livr": "^2.3.3",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-webbylab": "^5.3.1",
+    "eslint-plugin-ava": "^10.3.0",
+    "eslint-plugin-fetch": "0.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-more": "1.0.0",
+    "eslint-plugin-no-require-lodash": "^1.1.0",
+    "eslint-plugin-prefer-spread": "^1.0.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-security": "^1.4.0",
+    "nodemon": "^2.0.4"
+  }
+}

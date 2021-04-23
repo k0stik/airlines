@@ -1,0 +1,44 @@
+{
+    "appPort": "{{PORT}}",
+    "db" : {
+        "username": "{{DB_USERNAME}}",
+        "password": "{{DB_PASSWORD}}",
+        "database": "{{DB_DATABASE}}",
+        "dialect": "{{DB_DIALECT}}",
+        "host": "{{DB_HOST}}",
+        "port": "{{DB_PORT}}"
+    },
+    "logs" : [
+        {
+            "name" : "api",
+            "level": "info",
+            "transports": [
+                {
+                    "type": "daily-file",
+                    "filename": "logs/api-%DATE%.log",
+                    "maxFiles": "7d"
+                },
+                {
+                    "type": "console",
+                    "level": "warning",
+                    "pretty": true
+                },
+            ]
+        },
+        {
+            "name" : "application",
+            "level": "info",
+            "transports": [
+                {
+                    "type": "daily-file",
+                    "filename": "logs/application-%DATE%.log",
+                    "maxFiles": "7d"
+                },
+                {
+                    "type": "console",
+                    "level": "debug"
+                }
+            ]
+        }
+    ]
+}
