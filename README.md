@@ -5,7 +5,7 @@ Also I use sequelize ORM to describe entities and relations between them
 There are 4 layers in this app:
 1. routes,
 2. controllers - one method per route,
-3. use-cases (or services) - one class with business-logic per rout,
+3. use-cases (or services) - one class with business-logic per route,
 4. models
 
 ----
